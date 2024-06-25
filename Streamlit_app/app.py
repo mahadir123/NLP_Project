@@ -30,7 +30,7 @@ st.write("Select a language and enter some text to analyze the sentiment:")
 # Add a selection box for language choice
 language = st.selectbox("Choose a language", ("Malayalam", "Tamil"))
 
-user_input = st.text_area("Text Input", "Enter text here...")
+user_input = st.text_area("Paste comments")
 
 if st.button("Analyze"):
     nlp_pipeline = load_model(language)
